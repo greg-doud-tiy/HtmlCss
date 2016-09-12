@@ -1,0 +1,2 @@
+# Day21 - HTML & CSS - The Student List
+Here is my work on this assignment. You'll notice that I used quite a bit more styles than we talked about in class. Styling an application takes lots of attention to detail and a good understanding of how CSS works.
