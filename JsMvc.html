@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+	<meta charset="utf-8">
+	<title>JS MVC</title>
+	<link src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<script src="http://code.jquery.com/jquery-3.1.0.min.js"></script>
+	<script>
+		$(function() {
+			var count = 0;
+
+			function render() {
+				$("input:text").val(count);
+				if(count >= 8) {
+					$("#count").css("color", "red");
+				} else {
+					$("#count").css("color", "black");
+				}
+				if(count % 2 == 0)
+					$("#count").css("font-style", "italic");
+				else
+					$("#count").css("font-style", "normal");
+			}
+
+			$("#up").click(function() {
+				count++;
+				render();
+			})
+
+			$("#dn").click(function() {
+				count--;
+				render();
+			})
+
+		})
+	</script>
+<head>
+</head>
+<body>
+	<button id="up">UP</button>
+	<input type="text" id="count" value="0">
+	<button id="dn">DOWN</button>
+</body>
+</html>
